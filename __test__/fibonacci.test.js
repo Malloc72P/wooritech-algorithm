@@ -1,4 +1,4 @@
-import fibonacci from '../src/fibonacci/fibonacci';
+import fibonacci from '../src/fibonacci';
 
 describe('fibonacci', () => {
     it('should calculate fibonacci correctly', () => {
