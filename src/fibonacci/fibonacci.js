@@ -5,6 +5,10 @@
  * @returns {*[]} 피보나치 수열
  */
 export default function fibonacci(n) {
+    //입력인자의 값이 0 이하면 빈 배열을 반환
+    if (n <= 0) {
+        return [];
+    }
     //피보나치 수열의 첫 두값을 담고 있는 배열 선언
     const answer = [0, 1];
     //입력인자 n까지 반복하면서 새로운 피보나치 수를 answer배열의 뒤에 추가
