@@ -20,7 +20,10 @@
   },
   "homepage": "https://github.com/Malloc72P/wooritech-algorithm#readme",
   "dependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
     "@types/jest": "^27.4.1",
+    "babel-jest": "^27.5.1",
     "jest": "^27.5.1"
   }
 }
