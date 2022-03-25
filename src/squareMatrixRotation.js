@@ -36,7 +36,7 @@ export default function squareMatrixRotation(matrix) {
     }
     //변경된 행렬을 반환합니다.
     return matrix;
-};
+}
 
 function moveLeftBottom(point) {
     moveLeft(point);
