@@ -1,5 +1,5 @@
 # 문제 1 : 피보나치 수열
-## 코드
+### 코드
 ```javascript
 export default function fibonacci(n) {
     //입력인자의 값이 0 이하면 빈 배열을 반환
@@ -19,14 +19,14 @@ export default function fibonacci(n) {
     return answer;
 }
 ```
-## 풀이방법
+### 풀이방법
 - 입력인자 n의 값이 0 이하라면 빈 배열을 반환하도록 구현했습니다.
 - n의 값이 1 이상이면, n까지의 피보나치 수열의 값을 구해서 배열의 맨 뒤에 넣도록 구현했습니다.
 - 새로운 피보나치 수열의 값을 구할 땐, 배열의 맨 뒤에 있는 두 원소의 값을 더해서 구했습니다.
 - 수열을 다 구하고 나면, 맨 앞에 있는 값인 0을 제거해주도록 했습니다.
 
 # 문제 2 : 이진검색
-## 코드
+### 코드
 ```javascript
 //값을 찾지 못한 경우에 해당하는 상수값.
 const NOT_FOUND = -1;
@@ -56,7 +56,7 @@ export default function binarySearch(array, target, comparator = NUMBER_COMPARAT
     return NOT_FOUND;//값을 찾지 못한 경우, 이에 해당하는 상수값을 반환.
 }
 ```
-## 문제풀이
+### 문제풀이
 **중간값 구하기**
 - 대상값에 해당하는 매개변수 target을 정렬된 배열 array에서 검색합니다
 - 변수 low와 high를 가지고 중간값의 인덱스를 구합니다.
@@ -72,7 +72,7 @@ export default function binarySearch(array, target, comparator = NUMBER_COMPARAT
 - 기본 비교함수로 숫자에 대한 이진검색에 사용될 비교 함수를 사용해서, binarySearch함수 호출시 comparator의 인자를 넘기지 않으면 숫자에 대한 이진검색을 수행할 수 있도록 구현할 수 있었습니다.
 
 # 문제 3 : 정방행렬 90도 시계방향 회전
-## 코드
+### 코드
 ```javascript
 export default function squareMatrixRotation(matrix) {
     const matrixLength = matrix.length;
@@ -105,8 +105,11 @@ export default function squareMatrixRotation(matrix) {
     return matrix;
 }
 ```
-## 문제풀이
-**행렬을 회전하는 방법**
-- 행렬의 외곽에서 시작해서 안쪽으로 들어가면서 행렬을 회전시킵니다.
+### 문제풀이
+**행렬을 회전하는 방법**  
+![image](https://user-images.githubusercontent.com/41663269/160071890-e7dba9bd-2f38-4457-8f27-9a1bfb1d33a6.png)  
+- 행렬의 외곽에서 시작해서 안쪽으로 들어가면서 행렬을 회전시킵니다.  
+  
+![image](https://user-images.githubusercontent.com/41663269/160072867-bb9d80b7-af92-47eb-9c54-ff840949ecf0.png)  
 - 행렬의 한칸씩 시계방향으로 90도 회전시켰습니다. 맨 아래는 왼쪽으로, 오른쪽은 아래로, 맨 위는 오른쪽으로 덮어쓰는 식으로 회전을 구현했습니다.
 - 다만, 이렇게 하면 왼쪽에 있는 칸은 값이 덮어써져버립니다. 그래서 회전하기 전에 왼쪽 면에 해당하는 칸의 값을 임시변수에 저장해두었습니다. 그리고 왼쪽을 맨 위로 덮어쓰기할때엔 임시변수에 저장된 값을 꺼내어 사용하도록 구현했습니다.
