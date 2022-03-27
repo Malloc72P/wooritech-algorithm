@@ -1,3 +1,8 @@
+# 코드 작성정보
+- 작성자 이메일 : scra1028@gmail.com
+- node 버전 : 12.14.1
+- IDE : Webstorm 2021.3.3
+
 # 문제 1 : 피보나치 수열
 ### 코드
 ```javascript
